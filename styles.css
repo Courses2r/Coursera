@@ -7,6 +7,102 @@ body {
     color: #333;
 }
 
+/* تنسيق صفحة تسجيل الدخول */
+
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f4f7f6;
+}
+
+.login-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 360px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+    color: #007bff;
+    font-size: 24px;
+}
+
+.login-container input {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.login-container button {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.social-login button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 6px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.social-login button:hover {
+    background-color: #f0f0f0;
+}
+
+.social-login i {
+    margin-right: 10px;
+}
+
+/* تنسيق الرابط لإنشاء حساب */
+
+.signup-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
 /* تنسيق الشريط العلوي */
 
 .header-bar {
@@ -41,78 +137,6 @@ body {
 .header-bar .nav-links a:hover {
     color: #d4d4d4;
     transform: scale(1.05);
-}
-
-/* تنسيق صفحة تسجيل الدخول */
-
-.login-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: #f4f7f6;
-}
-
-.login-container {
-    background: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-    text-align: center;
-}
-
-.login-container h1 {
-    margin-bottom: 20px;
-    color: #007bff;
-}
-
-.login-container input {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.login-container button {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.login-container button:hover {
-    background-color: #0056b3;
-}
-
-.social-login button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-    color: #333;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.social-login button:hover {
-    background-color: #f0f0f0;
-}
-
-.social-login i {
-    margin-right: 10px;
 }
 
 /* تنسيق قسم الدورات */
@@ -176,4 +200,4 @@ footer {
     font-size: 50px; /* حجم الأيقونة */
     color: #007bff; /* لون الأيقونة */
     margin-bottom: 15px; /* المسافة بين الأيقونة والعنوان */
-    }
+}
