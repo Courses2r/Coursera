@@ -6,77 +6,79 @@
     <title>Coursera</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script>
-        function showSection(section) {
-            document.querySelectorAll('.section').forEach(el => el.style.display = 'none');
-            document.getElementById(section).style.display = 'block';
-        }
-        document.addEventListener('DOMContentLoaded', function() {
-            showSection('login');
-        });
-    </script>
 </head>
 <body>
     <header class="header-bar">
         <div class="header-title">Coursera</div>
         <nav class="nav-links">
-            <a href="javascript:void(0);" onclick="showSection('login')">تسجيل الدخول</a>
-            <a href="javascript:void(0);" onclick="showSection('courses')">دورات</a>
+            <a href="#home">الرئيسية</a>
+            <a href="#courses" id="courses-link">دورات</a>
             <a href="#contact">تواصل معنا</a>
         </nav>
     </header>
     <main>
-        <!-- قسم تسجيل الدخول -->
-        <section id="login" class="section">
+        <section id="login-section" class="login-section">
             <div class="login-container">
-                <h2>تسجيل الدخول</h2>
-                <form>
-                    <label for="username">اسم المستخدم:</label>
-                    <input type="text" id="username" name="username" required>
-                    <label for="password">كلمة المرور:</label>
-                    <input type="password" id="password" name="password" required>
-                    <button type="submit">تسجيل الدخول</button>
-                </form>
+                <div class="login-box">
+                    <h1>تسجيل دخول</h1>
+                    <form>
+                        <div class="textbox">
+                            <input type="text" placeholder="اسم المستخدم" required>
+                        </div>
+                        <div class="textbox">
+                            <input type="password" placeholder="كلمة المرور" required>
+                        </div>
+                        <input type="submit" class="btn" value="تسجيل دخول">
+                    </form>
+                </div>
             </div>
         </section>
-        <!-- قسم الدورات -->
-        <section id="courses" class="section">
-            <div class="course-item">
-                <i class="fa fa-calculator" aria-hidden="true"></i>
-                <h2>دورات الرياضيات</h2>
-            </div>
-            <div class="course-item">
-                <i class="fa fa-atom" aria-hidden="true"></i>
-                <h2>دورات الفزياء</h2>
-            </div>
-            <div class="course-item">
-                <i class="fa fa-flask" aria-hidden="true"></i>
-                <h2>دورات العلوم الطبيعية</h2>
-            </div>
-            <div class="course-item">
-                <i class="fa fa-book" aria-hidden="true"></i>
-                <h2>دورات الانجلزية</h2>
-            </div>
-            <div class="course-item">
-                <i class="fa fa-language" aria-hidden="true"></i>
-                <h2>دورات العربية</h2>
-            </div>
-            <div class="course-item">
-                <i class="fa fa-globe" aria-hidden="true"></i>
-                <h2>دورات الفرنسية</h2>
-            </div>
-            <div class="course-item">
-                <i class="fa fa-map" aria-hidden="true"></i>
-                <h2>دورات التاريخ والجغرافيا</h2>
-            </div>
-            <div class="course-item">
-                <i class="fa fa-brain" aria-hidden="true"></i>
-                <h2>دورات الفلسفة</h2>
+        <section id="courses-section" class="courses-section hidden">
+            <div class="courses">
+                <div class="course-item">
+                    <i class="fa fa-calculator" aria-hidden="true"></i>
+                    <h2>دورات الرياضيات</h2>
+                </div>
+                <div class="course-item">
+                    <i class="fa fa-atom" aria-hidden="true"></i>
+                    <h2>دورات الفزياء</h2>
+                </div>
+                <div class="course-item">
+                    <i class="fa fa-flask" aria-hidden="true"></i>
+                    <h2>دورات العلوم الطبيعية</h2>
+                </div>
+                <div class="course-item">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    <h2>دورات الانجلزية</h2>
+                </div>
+                <div class="course-item">
+                    <i class="fa fa-language" aria-hidden="true"></i>
+                    <h2>دورات العربية</h2>
+                </div>
+                <div class="course-item">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                    <h2>دورات الفرنسية</h2>
+                </div>
+                <div class="course-item">
+                    <i class="fa fa-map" aria-hidden="true"></i>
+                    <h2>دورات التاريخ والجغرافيا</h2>
+                </div>
+                <div class="course-item">
+                    <i class="fa fa-brain" aria-hidden="true"></i>
+                    <h2>دورات الفلسفة</h2>
+                </div>
             </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Achraf Meddour. جميع الحقوق محفوظة.</p>
     </footer>
+    <script>
+        document.getElementById('courses-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('login-section').classList.add('hidden');
+            document.getElementById('courses-section').classList.remove('hidden');
+        });
+    </script>
 </body>
-                    </html>
+    </html>
