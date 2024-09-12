@@ -42,45 +42,111 @@ body {
 }
 
 /* تنسيق قسم تسجيل الدخول */
-.login-container {
+.login-section {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 40px;
-    background: #fff;
-    margin: 20px auto;
-    width: 300px;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    height: 100vh;
 }
 
-.login-container h2 {
-    font-size: 24px;
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+}
+
+.login-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-box h1 {
+    margin-bottom: 20px;
     color: #007bff;
+    font-size: 24px;
+}
+
+.textbox {
     margin-bottom: 20px;
 }
 
-.login-container form {
-    display: flex;
-    flex-direction: column;
+.textbox input {
     width: 100%;
-}
-
-.login-container label {
-    margin: 10px 0 5px;
-}
-
-.login-container input {
-    padding: 12px;
-    margin-bottom: 10px;
+    padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    font-size: 16px;
 }
 
-.login-container button {
-    padding: 12px;
+.btn {
+    width: 100%;
+    background-color: #007bff;
+    border: none;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* إخفاء قسم الدورات في البداية */
+.courses-section.hidden {
+    display: none;
+}
+
+/* تنسيق قسم الدورات */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+/* تنسيق كل عنصر دورة */
+.course-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.course-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.course-item i {
+    font-size: 50px; /* حجم الأيقونة */
+    color: #007bff; /* لون الأيقونة */
+    margin-bottom: 15px; /* المسافة بين الأيقونة والعنوان */
+}
+
+/* تنسيق التذييل */
+footer {
     background-color: #007bff;
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 4px solid #0056b3;
+                                }
