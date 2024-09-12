@@ -1,0 +1,25 @@
+/* إعدادات أساسية للجسم */
+
+body {
+
+    margin: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-color: #f4f7f6;
+
+    color: #333;
+
+}
+
+/* تنسيق الشريط العلوي */
+
+.header-bar {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background-color: #007bff; /* لون الخلفية */
