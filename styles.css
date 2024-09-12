@@ -1,4 +1,5 @@
 /* إعدادات أساسية للجسم */
+
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -7,6 +8,7 @@ body {
 }
 
 /* تنسيق الشريط العلوي */
+
 .header-bar {
     display: flex;
     align-items: center;
@@ -41,72 +43,84 @@ body {
     transform: scale(1.05);
 }
 
-/* تنسيق قسم تسجيل الدخول */
-.login-section {
+/* تنسيق صفحة تسجيل الدخول */
+
+.login-page {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 100vh;
+    background: #f4f7f6;
 }
 
 .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #007bff, #00c6ff);
-}
-
-.login-box {
     background: #fff;
-    padding: 40px;
+    padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
+    width: 100%;
     text-align: center;
 }
 
-.login-box h1 {
+.login-container h1 {
     margin-bottom: 20px;
     color: #007bff;
-    font-size: 24px;
 }
 
-.textbox {
-    margin-bottom: 20px;
-}
-
-.textbox input {
-    width: 100%;
+.login-container input {
+    width: calc(100% - 20px);
     padding: 10px;
+    margin: 10px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 16px;
 }
 
-.btn {
+.login-container button {
     width: 100%;
-    background-color: #007bff;
+    padding: 10px;
+    margin: 10px 0;
     border: none;
-    padding: 15px;
-    color: white;
     border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
     cursor: pointer;
-    font-size: 18px;
     transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+.login-container button:hover {
     background-color: #0056b3;
 }
 
-/* إخفاء قسم الدورات في البداية */
-.courses-section.hidden {
-    display: none;
+.social-login button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.social-login button:hover {
+    background-color: #f0f0f0;
+}
+
+.social-login i {
+    margin-right: 10px;
 }
 
 /* تنسيق قسم الدورات */
+
+.courses-section {
+    display: none; /* إخفاء القسم بشكل افتراضي */
+}
+
 .courses {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -115,6 +129,7 @@ body {
 }
 
 /* تنسيق كل عنصر دورة */
+
 .course-item {
     display: flex;
     flex-direction: column;
@@ -133,13 +148,19 @@ body {
     transform: translateY(-5px);
 }
 
-.course-item i {
-    font-size: 50px; /* حجم الأيقونة */
-    color: #007bff; /* لون الأيقونة */
-    margin-bottom: 15px; /* المسافة بين الأيقونة والعنوان */
+.course-logo {
+    height: 60px; /* حجم الشعار */
+    margin-bottom: 15px;
+}
+
+.course-item h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #007bff;
 }
 
 /* تنسيق التذييل */
+
 footer {
     background-color: #007bff;
     color: #fff;
@@ -149,4 +170,10 @@ footer {
     width: 100%;
     bottom: 0;
     border-top: 4px solid #0056b3;
-                                }
+}
+
+.course-item i {
+    font-size: 50px; /* حجم الأيقونة */
+    color: #007bff; /* لون الأيقونة */
+    margin-bottom: 15px; /* المسافة بين الأيقونة والعنوان */
+    }
