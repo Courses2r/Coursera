@@ -1,0 +1,170 @@
+/* إعدادات أساسية للجسم */
+
+body {
+
+    margin: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-color: #f4f7f6;
+
+    color: #333;
+
+}
+
+/* تنسيق الشريط العلوي */
+
+.header-bar {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background-color: #007bff; /* لون الخلفية */
+
+    padding: 15px 30px;
+
+    color: #fff;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.header-bar .header-title {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    flex: 1;
+
+}
+
+.header-bar .nav-links {
+
+    display: flex;
+
+    gap: 20px;
+
+}
+
+.header-bar .nav-links a {
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    transition: color 0.3s ease, transform 0.3s ease;
+
+}
+
+.header-bar .nav-links a:hover {
+
+    color: #d4d4d4;
+
+    transform: scale(1.05);
+
+}
+
+/* تنسيق قسم الدورات */
+
+.courses {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+
+    gap: 20px;
+
+    padding: 30px;
+
+}
+
+/* تنسيق كل عنصر دورة */
+
+.course-item {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background-color: #fff;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+}
+
+.course-item:hover {
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+    transform: translateY(-5px);
+
+}
+
+.course-logo {
+
+    height: 60px; /* حجم الشعار */
+
+    margin-bottom: 15px;
+
+}
+
+.course-item h2 {
+
+    margin: 0;
+
+    font-size: 20px;
+
+    color: #007bff;
+
+}
+
+/* تنسيق التذييل */
+
+footer {
+
+    background-color: #007bff;
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 15px;
+
+    position: fixed;
+
+    width: 100%;
+
+    bottom: 0;
+
+    border-top: 4px solid #0056b3;
+
+}
+.course-item i {
+
+    font-size: 50px; /* حجم الأيقونة */
+
+    color: #007bff; /* لون الأيقونة */
+
+    margin-bottom: 15px; /* المسافة بين الأيقونة والعنوان */
+
+}
