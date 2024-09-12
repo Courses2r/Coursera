@@ -1,4 +1,3 @@
-
 /* إعدادات أساسية للجسم */
 body {
     margin: 0;
@@ -12,7 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #007bff;
+    background-color: #007bff; /* لون الخلفية */
     padding: 15px 30px;
     color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -70,7 +69,7 @@ body {
 }
 
 .course-logo {
-    height: 60px;
+    height: 60px; /* حجم الشعار */
     margin-bottom: 15px;
 }
 
@@ -94,7 +93,7 @@ footer {
 
 /* تنسيق رابط مجموعة التلغرام */
 .telegram-link {
-    margin-top: 10px;
+    margin-top: 10px; /* المسافة من النص السابق */
     text-align: center;
 }
 
@@ -102,16 +101,23 @@ footer {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
     transition: color 0.3s ease;
 }
 
 .telegram-link a i {
-    font-size: 24px;
-    margin-right: 8px;
+    font-size: 24px; /* حجم الأيقونة */
+    margin-right: 8px; /* المسافة بين الأيقونة والنص */
 }
 
 .telegram-link a:hover {
     color: #d4d4d4;
-    }
+}
+
+.course-item i {
+    font-size: 50px; /* حجم الأيقونة */
+    color: #007bff; /* لون الأيقونة */
+    margin-bottom: 15px; /* المسافة بين الأيقونة والعنوان */
+}
