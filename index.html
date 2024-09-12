@@ -69,3 +69,87 @@
         <i class="fab fa-telegram-plane"></i> انضم إلينا على تيليجرام
     </a>
     </div>
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursera</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header-bar">
+        <div class="header-title">Coursera</div>
+        <nav class="nav-links">
+            <a href="#home">الرئيسية</a>
+            <a href="#courses" id="courses-link">دورات</a>
+            <a href="#contact">تواصل معنا</a>
+        </nav>
+    </header>
+    <main>
+        <section class="login" id="login-section">
+            <h2>تسجيل الدخول</h2>
+            <form>
+                <label for="username">اسم المستخدم</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">كلمة المرور</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">دخول</button>
+            </form>
+            <p>ليس لديك حساب؟ <a href="#signup">إنشاء حساب</a></p>
+        </section>
+        <section class="courses" id="courses-section">
+            <div class="course-item">
+                <i class="fa fa-calculator" aria-hidden="true"></i>
+                <h2>دورات الرياضيات</h2>
+            </div>
+            <div class="course-item">
+                <i class="fa fa-atom" aria-hidden="true"></i>
+                <h2>دورات الفزياء</h2>
+            </div>
+            <div class="course-item">
+                <i class="fa fa-flask" aria-hidden="true"></i>
+                <h2>دورات العلوم الطبيعية</h2>
+            </div>
+            <div class="course-item">
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <h2>دورات الانجلزية</h2>
+            </div>
+            <div class="course-item">
+                <i class="fa fa-language" aria-hidden="true"></i>
+                <h2>دورات العربية</h2>
+            </div>
+            <div class="course-item">
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <h2>دورات الفرنسية</h2>
+            </div>
+            <div class="course-item">
+                <i class="fa fa-map" aria-hidden="true"></i>
+                <h2>دورات التاريخ والجغرافيا</h2>
+            </div>
+            <div class="course-item">
+                <i class="fa fa-brain" aria-hidden="true"></i>
+                <h2>دورات الفلسفة</h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Achraf Meddour. جميع الحقوق محفوظة.</p>
+        <div class="telegram-link">
+            <a href="https://t.me/courses2r" target="_blank">
+                <i class="fab fa-telegram-plane"></i> انضم إلينا على تيليجرام
+            </a>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('courses-link').addEventListener('click', function() {
+            document.getElementById('login-section').style.display = 'none';
+            document.getElementById('courses-section').style.display = 'grid';
+        });
+    </script>
+</body>
+</html>
