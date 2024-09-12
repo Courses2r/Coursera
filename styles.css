@@ -121,3 +121,169 @@ footer {
     color: #007bff; /* لون الأيقونة */
     margin-bottom: 15px; /* المسافة بين الأيقونة والعنوان */
 }
+/* إعدادات أساسية للجسم */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* تنسيق الشريط العلوي */
+.header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #007bff; /* لون الخلفية */
+    padding: 15px 30px;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-bar .header-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+}
+
+.header-bar .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.header-bar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header-bar .nav-links a:hover {
+    color: #d4d4d4;
+    transform: scale(1.05);
+}
+
+/* تنسيق صفحة تسجيل الدخول */
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login h2 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.login input {
+    margin-bottom: 12px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login button:hover {
+    background-color: #0056b3;
+}
+
+/* إخفاء وإظهار قسم الدورات */
+.courses {
+    display: none;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.course-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.course-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.course-item i {
+    font-size: 50px; /* حجم الأيقونة */
+    color: #007bff; /* لون الأيقونة */
+    margin-bottom: 15px; /* المسافة بين الأيقونة والعنوان */
+}
+
+.course-item h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #007bff;
+}
+
+/* تنسيق التذييل */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 4px solid #0056b3;
+}
+
+/* تنسيق رابط مجموعة التلغرام */
+.telegram-link {
+    margin-top: 10px; /* المسافة من النص السابق */
+    text-align: center;
+}
+
+.telegram-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+}
+
+.telegram-link a i {
+    font-size: 24px; /* حجم الأيقونة */
+    margin-right: 8px; /* المسافة بين الأيقونة والنص */
+}
+
+.telegram-link a:hover {
+    color: #d4d4
