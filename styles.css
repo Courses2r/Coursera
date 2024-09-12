@@ -41,10 +41,11 @@ body {
     transform: scale(1.05);
 }
 
-/* تنسيق قسم تسجيل الدخول وإنشاء الحساب */
-.login-section, .signup-section {
-    display: none;
-    text-align: center;
+/* تنسيق قسم تسجيل الدخول */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 40px;
     background: #fff;
     margin: 20px auto;
@@ -53,101 +54,33 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-.login-container, .signup-container {
-    margin: 0 auto;
+.login-container h2 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 20px;
 }
 
-form {
+.login-container form {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
-label {
+.login-container label {
     margin: 10px 0 5px;
 }
 
-input {
+.login-container input {
     padding: 12px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
 
-button {
+.login-container button {
     padding: 12px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-/* إظهار صفحة تسجيل الدخول عند الدخول */
-#login-section {
-    display: block; /* عرض صفحة تسجيل الدخول */
-}
-
-/* إخفاء محتوى الدورات بشكل افتراضي */
-.courses-section {
-    display: none;
-    padding: 30px;
-}
-
-/* تنسيق كل عنصر دورة */
-.course-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.course-item:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
-}
-
-.course-logo {
-    height: 60px; /* حجم الشعار */
-    margin-bottom: 15px;
-}
-
-.course-item h2 {
-    margin: 0;
-    font-size: 20px;
-    color: #007bff;
-}
-
-/* تنسيق التذييل */
-footer {
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-    padding: 15px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    border-top: 4px solid #0056b3;
-}
-
-/* تنسيق الأيقونات */
-.course-item i {
-    font-size: 50px; /* حجم الأيقونة */
-    color: #007bff; /* لون الأيقونة */
-    margin-bottom: 15px; /* المسافة بين الأيقونة والعنوان */
-}
-
-/* إظهار المحتوى عند الضغط */
-.hidden {
-    display: none;
-    }
+    cursor
