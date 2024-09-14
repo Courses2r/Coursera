@@ -191,8 +191,7 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-    position: fixed;
-    bottom: 0;
+    position: relative;
     width: 100%;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -219,4 +218,9 @@ footer {
 
 .footer-content a:hover {
     text-decoration: underline;
-    }
+}
+
+.footer-content .telegram-icon {
+    font-size: 20px;
+    margin-right: 8px;
+}
