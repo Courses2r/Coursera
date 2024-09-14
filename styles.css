@@ -195,3 +195,7 @@ footer {
     bottom: 0;
     border-top: 4px solid #0056b3;
     }
+.header-bar .logo {
+    height: 50px; /* حجم الشعار */
+    margin-right: 20px; /* إضافة مسافة بين الشعار والعنوان */
+}
