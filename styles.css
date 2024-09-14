@@ -6,49 +6,6 @@ body {
     color: #333;
 }
 
-/* تنسيق الشريط العلوي */
-.header-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #007bff; /* لون الخلفية */
-    padding: 15px 30px;
-    color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.header-bar .header-title {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    flex: 1;
-    display: flex;
-    align-items: center;
-}
-
-.header-bar .header-title img {
-    height: 40px; /* حجم اللوغو */
-    border-radius: 50%; /* جعل اللوغو دائري */
-    margin-right: 10px; /* مسافة بين اللوغو والنص */
-}
-
-.header-bar .nav-links {
-    display: flex;
-    gap: 20px;
-}
-
-.header-bar .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.header-bar .nav-links a:hover {
-    color: #d4d4d4;
-    transform: scale(1.05);
-}
-
 /* تنسيق صفحة تسجيل الدخول */
 .login-page {
     display: flex;
@@ -143,6 +100,47 @@ body {
     text-decoration: underline;
 }
 
+/* تنسيق الشريط العلوي */
+.header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #007bff; /* لون الخلفية */
+    padding: 15px 30px;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-bar .header-logo {
+    height: 40px; /* حجم الشعار */
+    border-radius: 50%; /* جعل الشعار دائرياً */
+    object-fit: cover; /* تغطية الصورة بشكل مناسب */
+}
+
+.header-bar .header-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+}
+
+.header-bar .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.header-bar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header-bar .nav-links a:hover {
+    color: #d4d4d4;
+    transform: scale(1.05);
+}
+
 /* تنسيق قسم الدورات */
 .courses-section {
     display: none; /* إخفاء القسم بشكل افتراضي */
@@ -174,53 +172,47 @@ body {
     transform: translateY(-5px);
 }
 
-.course-item i {
-    font-size: 30px; /* حجم الأيقونات */
-    color: #007bff; /* لون الأيقونات */
-    margin-bottom: 10px;
-}
-
-.course-item h2 {
-    font-size: 18px;
-    color: #333;
-}
-
-/* تنسيق الشريط السفلي */
+/* تنسيق التذييل */
 footer {
-    background-color: #007bff; /* اللون الأزرق */
+    background-color: #007bff;
     color: #fff;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
     position: relative;
     width: 100%;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #0056b3;
 }
 
-.footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+footer .social-media {
+    margin-top: 10px;
 }
 
-.footer-content a {
+footer .social-media a {
     color: #fff;
     text-decoration: none;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+footer .social-media a:hover {
+    color: #d4d4d4;
+}
+
+footer .social-media i {
+    font-size: 20px;
+}
+
+footer p {
+    margin: 0;
     font-size: 16px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
 
-.footer-content i {
+footer p::before {
+    content: "©";
     font-size: 20px;
-    margin-right: 8px;
-}
-
-.footer-content a:hover {
-    text-decoration: underline;
-}
-
-.footer-content .telegram-icon {
-    font-size: 20px;
-    margin-right: 8px;
-}
+    margin-right: 5px;
+    }
