@@ -115,6 +115,10 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.header-bar .logo {
+    height: 50px; /* حجم الشعار */
+}
+
 .header-bar .header-title {
     font-size: 24px;
     font-weight: bold;
@@ -163,35 +167,4 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.course-item:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
-}
-
-.course-logo {
-    height: 60px; /* حجم الشعار */
-    margin-bottom: 15px;
-}
-
-.course-item h2 {
-    margin: 0;
-    font-size: 20px;
-    color: #007bff;
-}
-
-/* تنسيق التذييل */
-
-footer {
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-    padding: 15px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    border-top: 4px solid #0056b3;
-    }
+    box-shadow: 0 6px
