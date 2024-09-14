@@ -194,10 +194,4 @@ footer {
     width: 100%;
     bottom: 0;
     border-top: 4px solid #0056b3;
-}
-
-.course-item i {
-    font-size: 50px; /* حجم الأيقونة */
-    color: #007bff; /* لون الأيقونة */
-    margin-bottom: 15px; /* المسافة بين الأيقونة والعنوان */
-}
+    }
